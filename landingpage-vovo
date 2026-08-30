@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doces Momentos | Bolos & Sobremesas Artesanais</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              pink: '#FCE7F3',
+              rose: '#F43F5E',
+              darkRose: '#E11D48',
+              cream: '#FFFBEB',
+              brown: '#4A2E2B'
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-brand-cream text-brand-brown font-sans">
+
+  <nav class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <i class="fa-solid fa-cake-candles text-brand-rose text-2xl"></i>
+        <span class="text-2xl font-bold tracking-tight text-brand-brown">Doces<span class="text-brand-rose">Momentos</span></span>
+      </div>
+      
+      <div class="hidden md:flex space-x-8 font-medium">
+        <a href="#inicio" class="hover:text-brand-rose transition-colors">Início</a>
+        <a href="#destaques" class="hover:text-brand-rose transition-colors">Destaques</a>
+        <a href="#cardapio" class="hover:text-brand-rose transition-colors">Cardápio</a>
+        <a href="#sobre" class="hover:text-brand-rose transition-colors">Sobre Nós</a>
+      </div>
+
+      <a href="https://wa.me/5500000000000?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido." 
+         target="_blank" 
+         class="bg-brand-rose hover:bg-brand-darkRose text-white px-5 py-2.5 rounded-full font-semibold transition-all shadow-md hover:shadow-lg flex items-center gap-2">
+        <i class="fa-brands fa-whatsapp text-lg"></i>
+        <span>Pedir Agora</span>
+      </a>
+    </div>
+  </nav>
+
+  <section id="inicio" class="pt-32 pb-20 md:pt-40 md:pb-28 px-4 max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="space-y-6 text-center md:text-left">
+        <span class="bg-brand-pink text-brand-rose px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase">
+          Feito à mão com amor
+        </span>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-brand-brown">
+          Adoce seus dias com nossos bolos inesquecíveis.
+        </h1>
+        <p class="text-lg text-gray-600 max-w-lg mx-auto md:mx-0">
+          Ingredientes selecionados, receitas artesanais e o carinho de casa em cada fatia. Peça online e receba na sua porta.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+          <a href="#cardapio" class="bg-brand-rose hover:bg-brand-darkRose text-white px-8 py-4 rounded-full font-bold text-center transition-all shadow-lg hover:shadow-xl">
+            Ver Cardápio
+          </a>
+          <a href="#sobre" class="border-2 border-brand-brown text-brand-brown hover:bg-brand-brown hover:text-white px-8 py-4 rounded-full font-bold text-center transition-all">
+            Conheça a Loja
+          </a>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="w-full h-[400px] sm:h-[500px] rounded-3xl overflow-hidden shadow-2xl">
+          <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&q=80&w=1000" 
+               alt="Bolo de Chocolate Delicioso" 
+               class="w-full h-full object-cover transform hover:scale-105 transition-duration-500 transition-all duration-500">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="destaques" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-3xl font-bold text-brand-brown sm:text-4xl">Os Mais Pedidos</h2>
+        <p class="text-gray-600 mt-2">Descubra os favoritos dos nossos clientes essa semana.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-brand-cream rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all border border-pink-100 flex flex-col justify-between">
+          <div>
+            <img src="https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?auto=format&fit=crop&q=80&w=600" alt="Bolo de Morango" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-bold text-brand-brown">Red Velvet com Morango</h3>
+                <span class="text-brand-rose font-bold text-lg">R$ 85</span>
+              </div>
+              <p class="text-gray-600 text-sm mb-4">Massa aveludada, recheio cremoso de cream cheese e morangos frescos.</p>
+            </div>
+          </div>
+          <div class="px-6 pb-6">
+            <a href="https://wa.me/5500000000000?text=Quero%20encomendar%20o%20Red%20Velvet" target="_blank" class="w-full block text-center bg-white border border-brand-rose text-brand-rose hover:bg-brand-rose hover:text-white py-2 rounded-xl font-semibold transition-colors">
+              Encomendar
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-brand-cream rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all border border-pink-100 flex flex-col justify-between">
+          <div>
+            <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&q=80&w=600" alt="Brownie do Vovô" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-bold text-brand-brown">Torta Vulcão de Chocolate</h3>
+                <span class="text-brand-rose font-bold text-lg">R$ 70</span>
+              </div>
+              <p class="text-gray-600 text-sm mb-4">Massa fofinha de chocolate 70% com cobertura abundante de brigadeiro gourmet.</p>
+            </div>
+          </div>
+          <div class="px-6 pb-6">
+            <a href="https://wa.me/5500000000000?text=Quero%20encomendar%20a%20Torta%20Vulcao" target="_blank" class="w-full block text-center bg-white border border-brand-rose text-brand-rose hover:bg-brand-rose hover:text-white py-2 rounded-xl font-semibold transition-colors">
+              Encomendar
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-brand-cream rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all border border-pink-100 flex flex-col justify-between">
+          <div>
+            <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&q=80&w=600" alt="Cheesecake" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-bold text-brand-brown">Cheesecake de Frutas Vermelhas</h3>
+                <span class="text-brand-rose font-bold text-lg">R$ 95</span>
+              </div>
+              <p class="text-gray-600 text-sm mb-4">Base crocante de biscoito, creme leve de queijo e calda caseira de frutas.</p>
+            </div>
+          </div>
+          <div class="px-6 pb-6">
+            <a href="https://wa.me/5500000000000?text=Quero%20encomendar%20o%20Cheesecake" target="_blank" class="w-full block text-center bg-white border border-brand-rose text-brand-rose hover:bg-brand-rose hover:text-white py-2 rounded-xl font-semibold transition-colors">
+              Encomendar
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-brand-pink/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-8 text-center">
+        <div class="p-6 bg-white rounded-2xl shadow-sm">
+          <div class="w-12 h-12 bg-brand-pink rounded-full flex items-center justify-center mx-auto mb-4 text-brand-rose text-xl">
+            <i class="fa-solid fa-leaf"></i>
+          </div>
+          <h3 class="font-bold text-lg mb-2">Ingredientes Selecionados</h3>
+          <p class="text-gray-600 text-sm">Trabalhamos apenas com matéria-prima de alta qualidade e frutas sempre frescas.</p>
+        </div>
+
+        <div class="p-6 bg-white rounded-2xl shadow-sm">
+          <div class="w-12 h-12 bg-brand-pink rounded-full flex items-center justify-center mx-auto mb-4 text-brand-rose text-xl">
+            <i class="fa-solid fa-truck-fast"></i>
+          </div>
+          <h3 class="font-bold text-lg mb-2">Entrega Rápida & Segura</h3>
+          <p class="text-gray-600 text-sm">Seu pedido entregue em embalagens especiais para chegar perfeito até você.</p>
+        </div>
+
+        <div class="p-6 bg-white rounded-2xl shadow-sm">
+          <div class="w-12 h-12 bg-brand-pink rounded-full flex items-center justify-center mx-auto mb-4 text-brand-rose text-xl">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <h3 class="font-bold text-lg mb-2">100% Artesanal</h3>
+          <p class="text-gray-600 text-sm">Sem conservantes artificiais. Cada receita é feita individualmente com muito carinho.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-brand-brown text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-8">
+      <div>
+        <div class="flex items-center gap-2 mb-4">
+          <i class="fa-solid fa-cake-candles text-brand-rose text-2xl"></i>
+          <span class="text-2xl font-bold">DocesMomentos</span>
+        </div>
+        <p class="text-gray-300 text-sm">Transformando ingredientes simples em memórias inesquecíveis.</p>
+      </div>
+
+      <div>
+        <h4 class="font-bold text-lg mb-4 text-brand-pink">Horário de Funcionamento</h4>
+        <p class="text-gray-300 text-sm">Terça a Sábado: 09h às 19h</p>
+        <p class="text-gray-300 text-sm">Domingo: 09h às 14h</p>
+      </div>
+
+      <div>
+        <h4 class="font-bold text-lg mb-4 text-brand-pink">Redes Sociais</h4>
+        <div class="flex space-x-4">
+          <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-brand-rose transition-colors">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-brand-rose transition-colors">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 text-center mt-8 pt-8 border-t border-white/10 text-xs text-gray-400">
+      &copy; 2026 Doces Momentos. Todos os direitos reservados.
+    </div>
+  </footer>
+
+</body>
+</html>
