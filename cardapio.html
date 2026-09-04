@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cardápio Completo | Doces Momentos</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              pink: '#FCE7F3',
+              rose: '#F43F5E',
+              darkRose: '#E11D48',
+              cream: '#FFFBEB',
+              brown: '#4A2E2B'
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-brand-cream text-brand-brown font-sans flex flex-col min-h-screen">
+
+  <!-- NAVBAR IDENTICA -->
+  <nav class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2">
+        <i class="fa-solid fa-cake-candles text-brand-rose text-2xl"></i>
+        <span class="text-2xl font-bold tracking-tight text-brand-brown">Doces<span class="text-brand-rose">Momentos</span></span>
+      </a>
+      
+      <a href="index.html" class="inline-flex items-center gap-2 font-medium text-brand-brown hover:text-brand-rose transition-colors">
+        <i class="fa-solid fa-arrow-left"></i>
+        <span>Voltar ao Início</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- BANNER CABEÇALHO -->
+  <section class="pt-32 pb-12 bg-brand-pink/50 text-center px-4">
+    <div class="max-w-3xl mx-auto space-y-3">
+      <span class="bg-white text-brand-rose px-4 py-1 rounded-full text-xs font-bold tracking-wide uppercase shadow-sm">
+        Nosso Menu Completo
+      </span>
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-brand-brown">
+        Cardápio de Delícias
+      </h1>
+      <p class="text-gray-600 text-base sm:text-lg">
+        Escolha seus favoritos e faça o pedido diretamente pelo WhatsApp!
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTEÚDO DO CARDÁPIO -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex-grow space-y-16">
+
+    <!-- SEÇÃO 1: BOLOS PISCINA -->
+    <section>
+      <div class="border-b-2 border-brand-pink pb-4 mb-8 flex items-center justify-between">
+        <h2 class="text-2xl sm:text-3xl font-bold text-brand-brown flex items-center gap-3">
+          <i class="fa-solid fa-circle-dot text-brand-rose text-xl"></i>
+          Bolos Piscina
+        </h2>
+        <span class="text-xs sm:text-sm font-semibold bg-brand-pink text-brand-rose px-3 py-1 rounded-full">Favoritos</span>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- BOLO 1 -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all border border-pink-100 flex flex-col justify-between">
+          <div>
+            <div class="w-full h-52 overflow-hidden">
+              <img src="imagens/BOLO (11).jpeg" alt="Bolo Piscina de Mousse de Limão" class="w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-bold text-brand-brown">Mousse de Limão</h3>
+                <span class="text-brand-rose font-bold text-lg whitespace-nowrap">R$ 75</span>
+              </div>
+              <p class="text-gray-600 text-sm">Massa de iogurte natural com cobertura artesanal e cremosa de mousse de limão.</p>
+            </div>
+          </div>
+          <div class="px-6 pb-6">
+            <a href="https://wa.me/5532999891480?text=Olá!%20Quero%20encomendar%20o%20Bolo%20Piscina%20de%20Mousse%20de%20Limão" target="_blank" class="w-full block text-center bg-brand-rose hover:bg-brand-darkRose text-white py-2.5 rounded-xl font-semibold transition-colors shadow-sm">
+              <i class="fa-brands fa-whatsapp mr-1"></i> Pedir no WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- BOLO 2 -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all border border-pink-100 flex flex-col justify-between">
+          <div>
+            <div class="w-full h-52 overflow-hidden">
+              <img src="imagens/BOLO (3).jpeg" alt="Bolo Piscina de Cenoura com Brigadeiro e Nozes" class="w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-bold text-brand-brown">Cenoura com Nozes</h3>
+                <span class="text-brand-rose font-bold text-lg whitespace-nowrap">R$ 70</span>
+              </div>
+              <p class="text-gray-600 text-sm">Massa de cenoura com cobertura generosa de brigadeiro gourmet e nozes picadas.</p>
+            </div>
+          </div>
+          <div class="px-6 pb-6">
+            <a href="https://wa.me/5532999891480?text=Olá!%20Quero%20encomendar%20o%20Bolo%20Piscina%20de%20Cenoura%20com%20Brigadeiro%20e%20Nozes" target="_blank" class="w-full block text-center bg-brand-rose hover:bg-brand-darkRose text-white py-2.5 rounded-xl font-semibold transition-colors shadow-sm">
+              <i class="fa-brands fa-whatsapp mr-1"></i> Pedir no WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- BOLO 3 -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all border border-pink-100 flex flex-col justify-between">
+          <div>
+            <div class="w-full h-52 overflow-hidden">
+              <img src="imagens/BOLO (10).jpeg" alt="Bolo Piscina de Ninho com Côco e Morango" class="w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-bold text-brand-brown">Ninho, Coco e Morango</h3>
+                <span class="text-brand-rose font-bold text-lg whitespace-nowrap">R$ 65</span>
+              </div>
+              <p class="text-gray-600 text-sm">Massa de iogurte natural com cobertura cremosa de Ninho, coco ralado e morangos frescos.</p>
+            </div>
+          </div>
+          <div class="px-6 pb-6">
+            <a href="https://wa.me/5532999891480?text=Olá!%20Quero%20encomendar%20o%20Bolo%20Piscina%20de%20Ninho%20com%20Coco%20e%20Morango" target="_blank" class="w-full block text-center bg-brand-rose hover:bg-brand-darkRose text-white py-2.5 rounded-xl font-semibold transition-colors shadow-sm">
+              <i class="fa-brands fa-whatsapp mr-1"></i> Pedir no WhatsApp
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SEÇÃO 2: BISCOITOS & SALGADOS -->
+    <section>
+      <div class="border-b-2 border-brand-pink pb-4 mb-8">
+        <h2 class="text-2xl sm:text-3xl font-bold text-brand-brown flex items-center gap-3">
+          <i class="fa-solid fa-cookie-bite text-brand-rose text-xl"></i>
+          Biscoitos & Salgados
+        </h2>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- ITEM 4 -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all border border-pink-100 flex flex-col justify-between">
+          <div>
+            <div class="w-full h-52 overflow-hidden">
+              <img src="imagens/BOLO (1).jpeg" alt="Goiabazinhas Amanteigadas" class="w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-bold text-brand-brown">Goiabazinhas (Pote)</h3>
+                <span class="text-brand-rose font-bold text-lg whitespace-nowrap">R$ 25</span>
+              </div>
+              <p class="text-gray-600 text-sm">Sequilhos amanteigados caseiros que derretem na boca com pedaços de goiabada.</p>
+            </div>
+          </div>
+          <div class="px-6 pb-6">
+            <a href="https://wa.me/5532999891480?text=Olá!%20Quero%20encomendar%20as%20Goiabazinhas" target="_blank" class="w-full block text-center bg-brand-rose hover:bg-brand-darkRose text-white py-2.5 rounded-xl font-semibold transition-colors shadow-sm">
+              <i class="fa-brands fa-whatsapp mr-1"></i> Pedir no WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- ITEM 5 -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all border border-pink-100 flex flex-col justify-between">
+          <div>
+            <div class="w-full h-52 overflow-hidden">
+              <img src="imagens/BOLO (2).jpeg" alt="Empadinhas Salgadas" class="w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-bold text-brand-brown">Empadinhas Artesanais</h3>
+                <span class="text-brand-rose font-bold text-lg whitespace-nowrap">R$ 8 /un</span>
+              </div>
+              <p class="text-gray-600 text-sm">Massa podre tradicional com recheios bem temperados e assados na hora.</p>
+            </div>
+          </div>
+          <div class="px-6 pb-6">
+            <a href="https://wa.me/5532999891480?text=Olá!%20Quero%20encomendar%20Empadinhas" target="_blank" class="w-full block text-center bg-brand-rose hover:bg-brand-darkRose text-white py-2.5 rounded-xl font-semibold transition-colors shadow-sm">
+              <i class="fa-brands fa-whatsapp mr-1"></i> Pedir no WhatsApp
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ IDENTICO -->
+  <footer class="bg-brand-brown text-white py-12 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-8">
+      <div>
+        <div class="flex items-center gap-2 mb-4">
+          <i class="fa-solid fa-cake-candles text-brand-rose text-2xl"></i>
+          <span class="text-2xl font-bold">DocesMomentos</span>
+        </div>
+        <p class="text-gray-300 text-sm">Transformando ingredientes simples em memórias inesquecíveis.</p>
+      </div>
+
+      <div>
+        <h4 class="font-bold text-lg mb-4 text-brand-pink">Horário de Funcionamento</h4>
+        <p class="text-gray-300 text-sm">Terça a Sábado: 09h às 18h</p>
+        <p class="text-gray-300 text-sm">Domingo: 10h às 14h</p>
+      </div>
+
+      <div>
+        <h4 class="font-bold text-lg mb-4 text-brand-pink">Redes Sociais</h4>
+        <div class="flex space-x-4">
+          <a href="https://www.instagram.com/claudiadinibatista?igsi=dGo2OWJyZHdjOG1o" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-brand-rose transition-colors">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-brand-rose transition-colors">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 text-center mt-8 pt-8 border-t border-white/10 text-xs text-gray-400">
+      &copy; 2026 Doces Momentos. Todos os direitos reservados.
+    </div>
+  </footer>
+
+</body>
+</html>
