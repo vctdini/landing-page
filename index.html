@@ -211,5 +211,51 @@
     </div>
   </footer>
 
+  <!-- Ampliação da foto: passe o mouse (computador) ou toque (celular) para ver o bolo inteiro -->
+  <style>
+    img.zoomable { cursor: zoom-in; }
+    #zoom { position: fixed; inset: 0; z-index: 100; display: none; align-items: center; justify-content: center; padding: 16px; pointer-events: none; }
+    #zoom.show { display: flex; }
+    #zoom img { max-width: 92vw; max-height: 88vh; object-fit: contain; border-radius: 16px; background: #fff; box-shadow: 0 20px 60px rgba(0,0,0,.45); }
+    #zoom.pin { background: rgba(0,0,0,.82); pointer-events: auto; cursor: zoom-out; }
+    #zoom .zoom-x { display: none; position: absolute; top: 14px; right: 14px; width: 44px; height: 44px; border: 0; border-radius: 50%; background: #fff; color: #4A2E2B; font-size: 28px; line-height: 1; cursor: pointer; }
+    #zoom.pin .zoom-x { display: block; }
+  </style>
+  <div id="zoom" aria-hidden="true">
+    <img alt="">
+    <button type="button" class="zoom-x" aria-label="Fechar">&times;</button>
+  </div>
+  <script>
+    (function () {
+      var ov = document.getElementById('zoom');
+      var big = ov.querySelector('img');
+      var podeHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+
+      function abrir(img, fixar) {
+        big.src = img.currentSrc || img.src;
+        big.alt = img.alt;
+        ov.classList.add('show');
+        ov.classList.toggle('pin', fixar);
+        document.body.style.overflow = fixar ? 'hidden' : '';
+      }
+      function fechar() {
+        ov.classList.remove('show', 'pin');
+        document.body.style.overflow = '';
+      }
+
+      document.querySelectorAll('img[src^="imagens/"]').forEach(function (img) {
+        img.classList.add('zoomable');
+        if (podeHover) {
+          img.addEventListener('mouseenter', function () { if (!ov.classList.contains('pin')) abrir(img, false); });
+          img.addEventListener('mouseleave', function () { if (!ov.classList.contains('pin')) fechar(); });
+        }
+        img.addEventListener('click', function (e) { e.preventDefault(); abrir(img, true); });
+      });
+
+      ov.addEventListener('click', fechar);
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape') fechar(); });
+    })();
+  </script>
+
 </body>
 </html>
