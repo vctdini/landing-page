@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Nós | Doces Momentos</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              pink: '#FCE7F3',
+              rose: '#F43F5E',
+              darkRose: '#E11D48',
+              cream: '#FFFBEB',
+              brown: '#4A2E2B'
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-brand-cream text-brand-brown font-sans flex flex-col min-h-screen">
+
+  <!-- NAVBAR: mantém o padrão visual do cardápio -->
+  <nav class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2">
+        <i class="fa-solid fa-cake-candles text-brand-rose text-2xl"></i>
+        <span class="text-2xl font-bold tracking-tight text-brand-brown">Doces<span class="text-brand-rose">Momentos</span></span>
+      </a>
+
+      <a href="index.html" class="inline-flex items-center gap-2 font-medium text-brand-brown hover:text-brand-rose transition-colors">
+        <i class="fa-solid fa-arrow-left"></i>
+        <span>Voltar ao Início</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- CABEÇALHO -->
+  <section class="pt-32 pb-12 bg-brand-pink/50 text-center px-4">
+    <div class="max-w-3xl mx-auto space-y-3">
+      <span class="bg-white text-brand-rose px-4 py-1 rounded-full text-xs font-bold tracking-wide uppercase shadow-sm">
+        Nossa história
+      </span>
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-brand-brown">
+        Mais do que doces, momentos especiais
+      </h1>
+      <p class="text-gray-600 text-base sm:text-lg">
+        Conheça um pouco da Doces Momentos e de quem coloca carinho em cada receita.
+      </p>
+    </div>
+  </section>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex-grow space-y-16">
+
+    <!-- SOBRE A LOJA -->
+    <section class="grid md:grid-cols-2 gap-10 lg:gap-14 items-center">
+      <div class="space-y-5">
+        <span class="text-brand-rose font-bold text-sm uppercase tracking-wider">Sobre a Doces Momentos</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-brand-brown">Um carinho que se transforma em sabor</h2>
+        <p class="text-gray-600 leading-relaxed">
+          [Conte aqui como a Doces Momentos começou: quando surgiu a ideia, o que inspirou a criação da loja e como os primeiros pedidos aconteceram.]
+        </p>
+        <p class="text-gray-600 leading-relaxed">
+          Cada produto é preparado de forma artesanal, com atenção aos ingredientes, ao preparo e aos detalhes. Nosso propósito é levar mais sabor e afeto para os encontros, comemorações e pequenos momentos do dia a dia.
+        </p>
+        <p class="text-gray-600 leading-relaxed">
+          [Acrescente aqui o que torna a loja especial: receitas próprias, encomendas, produção em família, atendimento próximo ou outro diferencial verdadeiro da marca.]
+        </p>
+      </div>
+
+      <div class="bg-white rounded-3xl p-3 shadow-md border border-pink-100">
+        <!-- Troque o arquivo abaixo por uma foto da loja, dos produtos ou do espaço de produção -->
+        <img src="imagens/loja.jpeg"
+             alt="Doces Momentos"
+             class="w-full h-72 sm:h-96 object-cover rounded-2xl"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="hidden h-72 sm:h-96 rounded-2xl bg-brand-pink/50 items-center justify-center text-center p-8">
+          <div>
+            <i class="fa-solid fa-camera text-4xl text-brand-rose mb-3"></i>
+            <p class="font-semibold text-brand-brown">Adicione aqui uma foto da loja ou dos produtos</p>
+            <p class="text-sm text-gray-600 mt-1">Arquivo sugerido: imagens/loja.jpeg</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUEM SOMOS / CONFEITEIRA -->
+    <section class="bg-white rounded-3xl shadow-sm border border-pink-100 p-6 sm:p-10 lg:p-12">
+      <div class="grid md:grid-cols-5 gap-10 items-center">
+        <div class="md:col-span-2">
+          <div class="rounded-2xl overflow-hidden bg-brand-pink/50">
+            <!-- Troque o arquivo abaixo por uma foto da confeiteira -->
+            <img src="imagens/confeiteira.jpeg"
+                 alt="Confeiteira da Doces Momentos"
+                 class="w-full h-72 sm:h-96 object-cover"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="hidden h-72 sm:h-96 items-center justify-center text-center p-8">
+              <div>
+                <i class="fa-solid fa-user text-4xl text-brand-rose mb-3"></i>
+                <p class="font-semibold text-brand-brown">Adicione aqui uma foto da confeiteira</p>
+                <p class="text-sm text-gray-600 mt-1">Arquivo sugerido: imagens/confeiteira.jpeg</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="md:col-span-3 space-y-5">
+          <span class="text-brand-rose font-bold text-sm uppercase tracking-wider">Quem está por trás de cada receita</span>
+          <h2 class="text-2xl sm:text-3xl font-bold text-brand-brown">Prazer, sou [Nome da confeiteira]!</h2>
+          <p class="text-gray-600 leading-relaxed">
+            [Apresente a confeiteira com as próprias palavras: conte um pouco sobre sua trajetória, como nasceu o interesse pela confeitaria e o que a motiva a preparar cada encomenda.]
+          </p>
+          <p class="text-gray-600 leading-relaxed">
+            [Se desejar, fale sobre cursos, experiências, receitas favoritas ou alguma lembrança especial que tenha relação com a história da Doces Momentos.]
+          </p>
+          <p class="text-gray-600 leading-relaxed">
+            Para mim, confeitar é [complete com uma frase pessoal sobre o significado da confeitaria]. É esse carinho que quero compartilhar com cada pessoa que escolhe nossos produtos.
+          </p>
+          <div class="pt-2">
+            <a href="https://wa.me/5532999891480?text=Olá!%20Conheci%20a%20história%20da%20Doces%20Momentos%20e%20gostaria%20de%20fazer%20um%20pedido."
+               target="_blank" rel="noopener"
+               class="inline-flex items-center gap-2 bg-brand-rose hover:bg-brand-darkRose text-white px-6 py-3 rounded-full font-semibold transition-all shadow-md">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              Fale com a gente
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VALORES -->
+    <section>
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <h2 class="text-2xl sm:text-3xl font-bold text-brand-brown">O que vai em cada pedacinho</h2>
+        <p class="text-gray-600 mt-2">Mais do que ingredientes, colocamos cuidado em todas as etapas.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white rounded-2xl p-7 text-center shadow-sm border border-pink-100">
+          <div class="w-12 h-12 bg-brand-pink rounded-full flex items-center justify-center mx-auto mb-4 text-brand-rose text-xl">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <h3 class="font-bold text-lg mb-2">Feito com carinho</h3>
+          <p class="text-gray-600 text-sm">Cada encomenda recebe atenção e cuidado do preparo à entrega.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-7 text-center shadow-sm border border-pink-100">
+          <div class="w-12 h-12 bg-brand-pink rounded-full flex items-center justify-center mx-auto mb-4 text-brand-rose text-xl">
+            <i class="fa-solid fa-leaf"></i>
+          </div>
+          <h3 class="font-bold text-lg mb-2">Ingredientes selecionados</h3>
+          <p class="text-gray-600 text-sm">A escolha dos ingredientes faz parte do cuidado com o sabor e a qualidade.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-7 text-center shadow-sm border border-pink-100">
+          <div class="w-12 h-12 bg-brand-pink rounded-full flex items-center justify-center mx-auto mb-4 text-brand-rose text-xl">
+            <i class="fa-solid fa-cake-candles"></i>
+          </div>
+          <h3 class="font-bold text-lg mb-2">Produção artesanal</h3>
+          <p class="text-gray-600 text-sm">Receitas preparadas em pequenos detalhes para adoçar ocasiões especiais.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAMADA FINAL -->
+    <section class="bg-brand-pink/50 rounded-3xl text-center px-6 py-10 sm:py-14">
+      <h2 class="text-2xl sm:text-3xl font-bold text-brand-brown">Vamos adoçar seu momento?</h2>
+      <p class="text-gray-600 mt-3 mb-6 max-w-xl mx-auto">Conheça nossas opções e escolha suas delícias favoritas.</p>
+      <a href="cardapio.html" class="inline-flex items-center gap-2 bg-brand-rose hover:bg-brand-darkRose text-white px-7 py-3 rounded-full font-bold transition-all shadow-md">
+        <i class="fa-solid fa-book-open"></i>
+        Ver cardápio
+      </a>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ: mantém o padrão do cardápio -->
+  <footer class="bg-brand-brown text-white py-12 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-8">
+      <div>
+        <div class="flex items-center gap-2 mb-4">
+          <i class="fa-solid fa-cake-candles text-brand-rose text-2xl"></i>
+          <span class="text-2xl font-bold">DocesMomentos</span>
+        </div>
+        <p class="text-gray-300 text-sm">Transformando ingredientes simples em memórias inesquecíveis.</p>
+      </div>
+
+      <div>
+        <h4 class="font-bold text-lg mb-4 text-brand-pink">Horário de Funcionamento</h4>
+        <p class="text-gray-300 text-sm">Terça a Sábado: 09h às 18h</p>
+        <p class="text-gray-300 text-sm">Domingo: 10h às 14h</p>
+      </div>
+
+      <div>
+        <h4 class="font-bold text-lg mb-4 text-brand-pink">Redes Sociais</h4>
+        <div class="flex space-x-4">
+          <a href="https://www.instagram.com/claudiadinibatista?igsi=dGo2OWJyZHdjOG1o" target="_blank" rel="noopener" aria-label="Instagram"
+             class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-brand-rose transition-colors">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#" aria-label="Facebook"
+             class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-brand-rose transition-colors">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 text-center mt-8 pt-8 border-t border-white/10 text-xs text-gray-400">
+      &copy; 2026 Doces Momentos. Todos os direitos reservados.
+    </div>
+  </footer>
+
+</body>
+</html>
